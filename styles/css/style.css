@@ -115,11 +115,47 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
 .header-container .header-logo {
-  width: 220px;
+  width: 170px;
+}
+
+.header-container .header-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.header-container .header-link svg {
+  width: 50px;
+}
+
+.header-container .header-link path {
+  fill: #fff;
+}
+
+.header-container .header-link p {
+  margin-left: 10px;
+}
+
+.header-container .header-link:hover {
+  color: #9cf122;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.header-container .header-link:hover path {
+  fill: #9cf122;
 }
 
 .donate .donate-container .donate-title {
