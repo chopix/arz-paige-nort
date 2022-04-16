@@ -2,10 +2,10 @@
 
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-// Сверстал - Chopix
-// vk.com/chopixov
+// 	Front-end часть - Chopix
+// 	vk.com/chopixov
 
-// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
 
 
 
@@ -133,8 +133,45 @@ body {
       svg:not(:root) {
          overflow: hidden;
       }
-      .shop-button-container {
+      .calculator {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 30px 50px;
+         grid-gap: 25px 30px;
+         gap: 25px 30px;
+         background: url('../../img/calculator-bg.png') top no-repeat;
+         max-width: 375px;
+         min-height: 155px;
+         padding-left: 30px;
+         margin-left: -30px;
          margin-top: 35px;
+         .calculator__title {
+            font-size: 25px;
+            color: #a4e842;
+            font-weight: 900;
+            grid-column: span 2;
+         }
+         .calculator__input-desc {
+            letter-spacing: 1px;
+         }
+         .calculator__value {
+            font-size: 25px;
+            font-weight: 900;
+            line-height: 28px;
+            #calculator__inner {
+               color: #fff;
+            }
+            #calc-output {
+               color: #fff;
+            }
+            span {
+               color: #a4e842;
+            }
+         }
+      }
+   }
+      .shop-button-container {
+         margin-top: -35px;
          text-align: center;
          max-width: 300px;
       }
@@ -161,7 +198,6 @@ body {
          background: url('../../img/render.png') 50% no-repeat;
      }
    }
-}
 .items-container {
    padding-top: 30px;
    .items-title {
@@ -330,3 +366,26 @@ body {
       }
    }
 }
+.footer-container {
+   padding-top: 70px;
+   transition: all .2s ease;
+   .footer-copyright {
+      padding: 10px;
+      display: flex;
+      border-radius: 12px;
+      justify-content: center;
+      background: rgba(0,0,0, 0.35);
+      p {
+         font-weight: 500;
+         text-align: center;
+         a {
+            color:#9cf122;
+            &:hover {
+               text-decoration: underline;
+            }
+         }
+      }
+   }
+}
+
+
