@@ -5,15 +5,10 @@
 
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
 
-
-
-
-
 function scrollTo(element) {
    element.scrollIntoView({behavior: "smooth"});
 
 };
-
 
 const buttonScroll = document.querySelector('.header');
 
@@ -25,7 +20,6 @@ for (let i = 0; i < cardButton.length; i++) {
     });
 }
 
-
 // калькулятор
 const AZ_COST = 2;
 let calculatorInput =  document.getElementById('calculator__inner');
@@ -34,8 +28,8 @@ document.getElementById('sum').addEventListener('input', function() {
    calculatorInput.innerText = this.value;
    calculatorOutput.innerHTML = this.value * AZ_COST;
    if(this.value == '') {
-      calculatorInput.innerText = '0.00';
-      calculatorOutput.innerHTML = '0.00';
+      calculatorInput.innerText = '0';
+      calculatorOutput.innerHTML = '0';
    }
 });
 
